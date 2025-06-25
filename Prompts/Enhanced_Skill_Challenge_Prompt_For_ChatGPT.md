@@ -5,6 +5,16 @@ Use this prompt to help set up and run dynamic, tailored skill challenges with C
 
 ---
 
+**Author**: Nuno Curado
+**Date**: 25th of June, 2025
+**Version**: 5.5
+
+## License
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+---
+
 ## ✅ Prompt
 
 I want to run a skill challenge for my D&D 5e party using the Skill Matrix we've built. Your job is to help me design and run it.

@@ -1,7 +1,7 @@
 # DM Framework Instructions for ChatGPT
 
 **Author**: Nuno Curado
-**Date**: 8th of June, 2025
+**Date**: 25th of June, 2025
 **Version**: 5.5
 
 ## License

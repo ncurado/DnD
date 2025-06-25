@@ -1,6 +1,6 @@
 # Enhanced Standardized Node Structure – Field Guide
 
-**Version**: 6.4
+**Version**: 7.0
 
 ## Overview
 
