@@ -3,6 +3,18 @@
 
 This plan focuses on enhancing the existing DM Framework by integrating a streamlined **Prep Commands and Tools** section. It ensures all additions complement existing workflows without introducing unnecessary complexity.
 
+---
+
+**Author**: Nuno Curado
+**Date**: 25th of June, 2025
+**Version**: 5.5
+
+## License
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+---
+
 ## **Goals**
 1. Refine the DM Framework's preparation workflows by introducing tools specifically tailored to pre-session tasks.
 2. Avoid redundancy by ensuring new commands extend the functionality of existing ones.
