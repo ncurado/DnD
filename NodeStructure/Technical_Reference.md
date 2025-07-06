@@ -1500,6 +1500,7 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 #### Color Palette Recommendations
 
 **Primary Colors** (for digital interfaces):
+
 - Critical Path: #E74C3C (Red) - High importance, essential content
 - Optional Content: #3498DB (Blue) - Supportive, enrichment content
 - System Elements: #2C3E50 (Dark Blue-Gray) - Interface, structure
@@ -1507,6 +1508,7 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 - Warning States: #F39C12 (Orange) - Attention, configuration needed
 
 **Accessibility Considerations**:
+
 - High contrast ratios (4.5:1 minimum) for text readability
 - Colorblind-friendly palette with distinct shapes and patterns
 - Monochrome compatibility for printing and low-color displays
@@ -1522,17 +1524,20 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 #### Icon Design Principles
 
 **Node Type Icons**:
+
 - Critical: ⭐ (Star) - Essential, high priority
 - Mission: 🎯 (Target) - Goal-oriented, complex
 - Optional: ➕ (Plus) - Additional, expandable
 - Informational: 📖 (Book) - Knowledge, exposition
 
 **Profile Level Icons**:
+
 - Lite: 🔹 (Small diamond) - Simple, quick
 - Standard: 🔷 (Medium diamond) - Balanced, complete
 - Comprehensive: 💎 (Large diamond) - Advanced, full-featured
 
 **Status Indicators**:
+
 - Complete: ✅ (Check mark) - Finished, validated
 - In Progress: ⏳ (Hourglass) - Active development
 - Needs Attention: ⚠️ (Warning) - Requires review
@@ -1558,6 +1563,7 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 #### Visual Integration Checklist
 
 **Essential Elements**:
+
 - [ ] Two-axis visualization clearly shows narrative vs. complexity separation
 - [ ] Profile progression path is visually obvious (Lite → Standard → Comprehensive)
 - [ ] Critical Path nodes are visually distinct from supporting content
@@ -1565,6 +1571,7 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 - [ ] Automation feature toggles are grouped logically with resource impact indicators
 
 **Accessibility Requirements**:
+
 - [ ] All visual information has text alternatives
 - [ ] Color is not the only means of conveying information
 - [ ] Interactive elements meet WCAG 2.1 AA standards
@@ -1572,6 +1579,7 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 - [ ] Screen reader compatibility is tested and verified
 
 **User Experience Priorities**:
+
 - [ ] New users can understand the system within 30 seconds of viewing
 - [ ] Profile selection is guided with clear recommendations
 - [ ] Configuration options are progressive (simple to advanced)
@@ -1581,22 +1589,24 @@ Experimental Tier ──→ Anonymized Cloud + Research Consent
 #### Technical Implementation Notes
 
 **Performance Considerations**:
+
 - Lazy load complex visualizations to maintain responsiveness
 - Cache frequently accessed visual elements
 - Optimize images and icons for web delivery
 - Provide fallback options for low-bandwidth connections
 
 **Cross-Platform Compatibility**:
+
 - Test visual elements across major browsers and devices
 - Ensure consistent rendering on different screen sizes
 - Provide print-friendly versions of key diagrams
 - Support both light and dark mode interfaces
 
 **Integration Standards**:
+
 - Follow platform-specific design guidelines (Material Design, Human Interface Guidelines)
 - Maintain consistency with existing tool aesthetics
 - Provide customization options for branding and theming
 - Support internationalization and localization requirements
 
 This visual reference guide provides the foundation for implementing the Enhanced Standardized Node Structure system across various platforms and tools while maintaining consistency, accessibility, and user-friendly design principles.
-

@@ -4,7 +4,10 @@
 
 ## Overview
 
-This documentation covers the Enhanced Standardized Node Structure system for D&D 5e campaign management. Version 6.0 introduces major improvements including privacy-respectful analytics, modular automation features, and visual reference guides. The system provides complete guidance for understanding, implementing, and creating node-based campaign content using a flexible two-axis approach that separates narrative priority from schema complexity.
+This documentation covers the Enhanced Standardized Node Structure system for D&D 5e campaign management. This version introduces major improvements including privacy-respectful analytics, modular automation features, and visual reference guides. The system provides complete guidance for understanding, implementing, and creating node-based campaign content using a flexible two-axis approach that separates narrative priority from schema complexity.
+
+**Scope**  
+This Field Guide provides complete guidance for the **Lite** and **Standard** profile levels. The more advanced **Comprehensive** profile is documented separately in *Technical_Reference.md*. Any mentions of the Comprehensive profile in this guide are provided only to illustrate the upgrade path; consult the technical reference for full specifications, analytics setup, and automation details.
 
 **Author**: Nuno Curado
 **Documentation**: with the help of Manus AI
@@ -14,18 +17,24 @@ This documentation covers the Enhanced Standardized Node Structure system for D&
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-## Table of Contentss
+*For offline copies, the full CC-BY-SA 4.0 license text is reproduced in Appendix B.*
+
+## Table of Contents
 
 1. [What is the Node Structure?](#1-what-is-the-node-structure)
 2. [The Two-Axis System](#2-the-two-axis-system)
 3. [Depth Profiles Explained](#3-depth-profiles-explained)
+   - [Lite Profile](#lite-profile)
+   - [Standard Profile](#standard-profile)
+   - [Comprehensive Profile (see Technical_Reference.md)](#comprehensive-profile-see-technical_referencemd)
 4. [Creating Your First Node](#4-creating-your-first-node)
 5. [Section-by-Section Guide](#5-section-by-section-guide)
 6. [Implementation for Human DMs](#6-implementation-for-human-dms)
 
 ## Appendices
 
-- [Appendix A: Complete Section Reference](#appendix-a-profile-quick-start-primers)
+- [Appendix A: Profile Quick-Start Primers](#appendix-a-profile-quick-start-primers)
+- [Appendix B: CC-BY-SA 4.0 License](#appendix-b-cc-by-sa-40-license)
 
 ---
 
@@ -126,6 +135,11 @@ Essential fields only:
 - Session Management
 - Consequences and Ramifications
 
+### Comprehensive Profile (see Technical_Reference.md)
+
+*This Field Guide does not cover the full specification for the Comprehensive profile.*  
+For analytics, automation hooks, and API integration details that extend the Standard profile, refer to **Technical_Reference.md**.
+
 ### Upgrade Paths
 
 **Lossless Expansion**: Any profile can be upgraded to a higher complexity level without losing existing content.
@@ -159,7 +173,7 @@ Based on your choices, use the appropriate template:
 
 ``` markdown
 # [ID] | [Name]
-**Version**: 1.0
+**Version**: 1.0 <!-- Node template version; independent of Guide v7.0 -->
 **Node Type**: [Critical/Mission/Optional/Informational]
 **Profile**: Lite
 
@@ -263,7 +277,7 @@ Provides immediate context for preparation and execution. Essential for quick re
   - **Connects To**: [Immediate next nodes this can lead to]
   - **Sets Up**: [Future nodes this foreshadows or enables]
 
-### Lite Profile Sections (Tutorial) {: #lite-profile-sections-tutorial }
+### Lite Profile Sections (Tutorial)
 
 #### Primary Challenge
 
@@ -286,7 +300,7 @@ Simple success/failure outcomes that connect to campaign narrative.
 **Failure**: [Negative outcome with specific complications]
 ```
 
-### Standard Profile Additional Sections (Tutorial) {: #standard-profile-additional-sections-tutorial }
+### Standard Profile Additional Sections (Tutorial)
 
 #### Enhanced Node Metadata (Standard Profile)
 
@@ -374,6 +388,8 @@ Simple success/failure outcomes that connect to campaign narrative.
 
 #### Comprehensive Profile Workflow
 
+**Note** — Workflow assumes you have the full specification open in **Technical_Reference.md**. This section summarises the steps; it is **not** the authoritative spec.
+
 1. **Standard Foundation** (40 minutes): Complete all Standard profile sections
 2. **Analytics Configuration** (5 minutes): Set privacy and tracking preferences
 3. **Automation Setup** (10 minutes): Enable desired automation features
@@ -427,6 +443,8 @@ The Standard Profile primer covers the complete Enhanced Node Structure system w
 *For complete Standard Profile guidance, see standalone primer document.*
 
 ### A.3 Comprehensive Profile Primer
+
+**Specification reference** — This primer is *orientation only*. The full Comprehensive profile specification (analytics, automation hooks, validation) lives in **Technical_Reference.md**
 
 The Comprehensive Profile primer provides enterprise-level features including advanced analytics, automation capabilities, and extensive tool integration. Designed for professional campaign management and data-driven optimization.
 
@@ -522,3 +540,5 @@ Use this matrix to quickly determine which profile best fits your immediate need
 4. Ensure privacy and security compliance for Comprehensive features
 
 The profile primers provide immediate, actionable guidance for implementing the Enhanced Node Structure system at any complexity level, ensuring that users can begin creating professional-quality campaign content immediately while having clear paths for growth and enhancement.
+
+## Appendix B: CC-BY-SA 4.0 License
