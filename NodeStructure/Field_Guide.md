@@ -1,23 +1,29 @@
 # Enhanced Standardized Node Structure – Field Guide
 
-**Version**: 7.0
+**Version:** 7.1
 
 ## Overview
 
-This documentation covers the Enhanced Standardized Node Structure system for D&D 5e campaign management. This version introduces major improvements including privacy-respectful analytics, modular automation features, and visual reference guides. The system provides complete guidance for understanding, implementing, and creating node-based campaign content using a flexible two-axis approach that separates narrative priority from schema complexity.
+The Enhanced Standardized Node Structure is a practical system for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
 
-**Scope**  
-This Field Guide provides complete guidance for the **Lite** and **Standard** profile levels. The more advanced **Comprehensive** profile is documented separately in *Technical_Reference.md*. Any mentions of the Comprehensive profile in this guide are provided only to illustrate the upgrade path; consult the technical reference for full specifications, analytics setup, and automation details.
+Each node balances two dimensions:
 
-**Author**: Nuno Curado
-**Documentation**: with the help of Manus AI
-**Date**: 8th of June, 2025
+- **Narrative Priority** – How important is this content to the overall story?
+- **Schema Depth** – How much structure and prep detail does it contain?
+
+This two-axis system helps you choose the right level of prep for each piece of your campaign.
+
+Whether you're building a homebrew world, running a published module, or collaborating with others, this guide will help you stay organized, prep efficiently, and run more engaging sessions.
+
+**Author:** Nuno Curado  
+**Documentation:** with help from Manus AI  
+**Date:** 8 June 2025
 
 ## License
 
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. See [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/) for details, or contact Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-*For offline copies, the full CC-BY-SA 4.0 license text is reproduced in Appendix B.*
+*Appendix B contains the full license text for offline use.*
 
 ## Table of Contents
 
@@ -26,7 +32,6 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 3. [Depth Profiles Explained](#3-depth-profiles-explained)
    - [Lite Profile](#lite-profile)
    - [Standard Profile](#standard-profile)
-   - [Comprehensive Profile (see Technical_Reference.md)](#comprehensive-profile-see-technical_referencemd)
 4. [Creating Your First Node](#4-creating-your-first-node)
 5. [Section-by-Section Guide](#5-section-by-section-guide)
 6. [Implementation for Human DMs](#6-implementation-for-human-dms)
@@ -34,511 +39,414 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 ## Appendices
 
 - [Appendix A: Profile Quick-Start Primers](#appendix-a-profile-quick-start-primers)
-- [Appendix B: CC-BY-SA 4.0 License](#appendix-b-cc-by-sa-40-license)
 
 ---
 
-## 1. What is the Node Structure?
+## 1. What Is the Node Structure?
 
-The Enhanced Standardized Node Structure transforms D&D campaign management from scattered notes into organized, interconnected content modules. Each "node" represents a discrete piece of campaign content—an encounter, scene, location, or story moment—with standardized formatting that enables systematic preparation, execution, and sharing.
+The Enhanced Standardized Node Structure is a practical system for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
 
-### The Problem It Solves
+Each node balances two dimensions:
 
-**Before**: DMs struggle with inconsistent notes, forgotten plot threads, and difficulty adapting content for different time constraints or player preferences.
+- **Narrative Priority** – How important is this content to the overall story?
+- **Schema Depth** – How much structure and prep detail does it contain?
 
-**After**: Every piece of campaign content follows a consistent structure that supports quick preparation, flexible execution, and easy modification.
+This guide helps you use this two-axis approach to prep efficiently and run more engaging sessions—whether you’re building a homebrew world, running a published module, or collaborating with others.
 
-### Core Benefits
+### Why Use This System?
 
-- **Systematic Organization**: Every campaign element has a defined place and purpose
-- **Flexible Preparation**: Choose detail level based on available time and needs
-- **Easy Adaptation**: Modular design allows quick adjustments
-- **Collaborative Sharing**: Standard format enables community resource sharing
-- **Privacy-Respectful Analytics**: Optional tracking with user-controlled privacy levels
-- **Modular Automation**: Choose automation features without all-or-nothing complexity
+**Before:** DMs often have messy notes, lost plot threads, and trouble adjusting for time or player needs.
+
+**After:** Every campaign piece uses a consistent format. You can prepare quickly, run sessions flexibly, and make changes easily.
+
+### Key Benefits
+
+- **Organized Content:** Every campaign part has a clear place and purpose.
+- **Flexible Prep:** Pick your detail level based on your needs and available time.
+- **Easy Changes:** Modular design lets you adjust content fast.
+- **Shareable:** Standard format makes it easy to share with others.
+- **Optional Analytics:** Optionally track outcomes while maintaining privacy.
+- **Modular Automation:** Add automation features as needed, not all at once.
 
 ## 2. The Two-Axis System
 
-### Understanding the Separation
+### What Are the Two Axes?
 
-The Enhanced Node Structure operates on **two independent axes** that address different concerns:
+The Node Structure uses **two separate axes**:
 
-| **Axis** | **What it Measures** | **Examples** |
-|----------|---------------------|--------------|
-| **Narrative Priority** | Does the table absolutely need this scene? | Critical → villain's ritual; Optional → tavern rumor |
-| **Schema Depth** | How many fields, tags, automations ride on the node? | Lite → ~6 fields; Comprehensive → full template with JSON validation |
+| **Axis**            | **What It Means**                                      | **Examples**                                |
+|---------------------|--------------------------------------------------------|---------------------------------------------|
+| Narrative Priority  | How important is this scene to the main story?         | Critical: villain's ritual; Optional: tavern rumor   |
+| Schema Depth        | How much detail and structure does the node include?   | Lite: ~6 fields; Standard: full template, validation |
 
-### The Critical Path Concept
+### Understanding the Critical Path
 
-**Critical Path**: The essential narrative backbone of your campaign, composed of Critical and Mission nodes that players must experience for campaign completion.
+**Critical Path:** The main storyline of your campaign, made up of Critical and Mission nodes. Players must experience these to finish the campaign.
 
 #### Critical Path = Critical Nodes + Mission Nodes
 
-| **Node Type** | **Role in Critical Path** | **Examples** |
-|---------------|---------------------------|--------------|
-| **Critical** | Key story moments, turning points, revelations (Critical Path) | Major plot reveals, character milestones, campaign-changing decisions |
-| **Mission** | Complex, multi-phase challenges that drive narrative (Critical Path) | Multi-session adventures, major quest lines, extended problem-solving |
-| **Optional** | Enrichment that can be skipped without breaking story | Side quests, exploration, additional character development |
-| **Informational** | Context and exposition delivery | Lore, world-building, background information |
+| **Node Type**   | **Role**                                 | **Examples**                                  |
+|-----------------|------------------------------------------|-----------------------------------------------|
+| Critical        | Key story events, turning points         | Major reveals, character milestones           |
+| Mission         | Multi-phase, story-driving challenges    | Main quests, multi-session adventures         |
+| Optional        | Extra content, can be skipped            | Side quests, extra character scenes           |
+| Informational   | Lore, background, context                | World-building, history, exposition           |
 
-### Campaign Planning Benefits
+### Why Use Two Axes?
 
-**Clear Decision Making**: "Is this essential to the main story?" → Critical Path. "Does this add depth but isn't required?" → Supporting Structure.
+**Clear Choices:** Decide if content is essential (Critical Path) or extra (Optional/Informational).
 
-**Flexible Pacing**: Adjust Optional/Informational density based on available time and player interest while maintaining story integrity through the Critical Path.
+**Flexible Pacing:** Adjust the amount of optional content depending on your group's time and interests, without breaking the main story.
 
-**Story Integrity**: The Critical Path ensures campaign completion even if time constraints force skipping Optional content.
+**No Forced Complexity:** You can make a Critical node simple (Lite) or detailed (Standard), and vice versa for Optional nodes.
 
-### Why This Matters
+### Who Benefits from Each Profile?
 
-**The Problem with Single-Axis Thinking**: Previous systems conflated story importance with metadata complexity. This forced users into inappropriate complexity levels based on story needs.
+Here’s how common DM styles align with the Node Profiles to support your prep and play needs.
 
-**The Two-Axis Solution**: A Critical node can live in a Lite template (quick one-pager) or a Comprehensive template (full automation). Conversely, you might draft an Optional node in Comprehensive depth if you plan to datamine interactions later.
-
-### Stakeholder Benefits
-
-| **User Type** | **Challenge** | **Solution** |
-|---------------|---------------|--------------|
-| **Minimalist DM** | Hates populating 10+ metadata slots | Create Critical-Lite nodes in 5 minutes |
-| **Tool-Focused DM** | Needs consistent validation for automation | Use Comprehensive profile for full schema compliance |
-| **Mentor DM** | Wants progressive complexity for newcomers | Clear upgrade path: Lite → Standard → Comprehensive |
+| **DM Style**        | **Core Need or Challenge**                                    | **Best Starting Profile**                      |
+|---------------------|---------------------------------------------------------------|------------------------------------------------|
+| Minimalist          | Prep time is limited; wants fast, clean structure             | **Lite** – fast setup with essential details   |
+| Storyteller         | Focuses on narrative flow, not deep mechanics                 | **Lite**, optionally upgrade for session depth |
+| Worldbuilder        | Loves lore, factions, and setting detail                      | **Standard** – supports structure and scope    |
+| Improviser          | Reacts to players; needs flexible reference points            | **Lite** – modular, easy to adapt              |
+| Tactician           | Enjoys crunchy challenges and dynamic encounters              | **Standard** – better for layered obstacles    |
+| Tool-Driven         | Uses VTTs, automation, and digital tools                      | **Standard** – includes full metadata          |
+| Mentor              | Teaching or guiding others through examples                   | **Lite → Standard** progression recommended    |
 
 ## 3. Depth Profiles Explained
 
 ### Lite Profile
 
-**Purpose**: Rapid content creation with minimal overhead
-**Creation Time**: 5-10 minutes
-**Use Cases**: Quick encounters, time-constrained preparation, simple content
+**Purpose:** Fast content creation with minimal detail  
+**Time to Create:** 5–10 minutes  
+**Best For:** Quick encounters, last-minute prep, simple content
 
-Essential fields only:
+Includes only the basics:
 
-- Title and basic identification
+- Title and identification
 - Node type and version
-- Summary with key entities and connections
-- Primary challenge or content
-- Basic success/failure consequences
+- Summary (key people, places, connections)
+- Main challenge or content
+- Basic success and failure outcomes
 
 ### Standard Profile
 
-**Purpose**: Comprehensive campaign management with full structure
-**Creation Time**: 30-45 minutes
-**Use Cases**: Main campaign content, detailed preparation, collaborative development
+These profiles represent the schema depth axis of the system, determining how much structure each node includes.
 
-**All sections from the complete Standard profile structure**, including:
+**Purpose:** Full-featured campaign management  
+**Time to Create:** 30–45 minutes  
+**Best For:** Main campaign content, detailed prep, collaboration
 
-- Enhanced Node Metadata
-- GM Focus and Intent
-- Character Integration
-- Detailed Challenges and Obstacles
-- Resource Management
-- Session Management
-- Consequences and Ramifications
+Includes everything from Lite, plus:
 
-### Comprehensive Profile (see Technical_Reference.md)
+- Detailed metadata
+- GM intent and focus
+- Character integration
+- Detailed challenges and options
+- Resource tracking
+- Session management
+- Full consequences and follow-ups
 
-*This Field Guide does not cover the full specification for the Comprehensive profile.*  
-For analytics, automation hooks, and API integration details that extend the Standard profile, refer to **Technical_Reference.md**.
+### Upgrading Profiles
 
-### Upgrade Paths
-
-**Lossless Expansion**: Any profile can be upgraded to a higher complexity level without losing existing content.
-
-1. **Start with Lite** for rapid content creation
-2. **Expand to Standard** when you need detailed preparation
-3. **Move to Comprehensive** for automation and advanced analytics
+**No Data Loss:** You can upgrade any node from Lite to Standard without losing content.
 
 ## 4. Creating Your First Node
 
-### Step 1: Choose Your Axes
+### Step 1: Decide on Narrative Priority and Detail
 
-**Narrative Priority**: What type of content is this?
+**Narrative Priority:** What is this node’s role?
 
-- **Critical**: Key story moments, turning points, revelations (Critical Path)
-- **Mission**: Complex, multi-phase challenges that drive narrative (Critical Path)
-- **Optional**: Enrichment that can be skipped without breaking story
-- **Informational**: Context and exposition delivery
+- **Critical:** Key story event (main story)
+- **Mission:** Major, multi-step challenge (main story)
+- **Optional:** Extra content, not required
+- **Informational:** Lore or background
 
-**Schema Depth**: How much detail do you need?
+**Schema Depth:** How much detail do you want?
 
-- Lite: Quick creation, minimal fields
-- Standard: Full structure and guidance
-- Comprehensive: Maximum automation and validation
+- Lite: Simple, fast setup
+- Standard: Full structure
 
-### Step 2: Select Template
+### Step 2: Use the Right Template
 
-Based on your choices, use the appropriate template:
+**Lite Template (for any node type):**
 
-**Lite Template** (any node type):
-
-``` markdown
+```markdown
 # [ID] | [Name]
-**Version**: 1.0 <!-- Node template version; independent of Guide v7.0 -->
-**Node Type**: [Critical/Mission/Optional/Informational]
-**Profile**: Lite
+**Version:** 1.0 <!-- Node template version; separate from Guide version -->
+**Node Type:** [Critical/Mission/Optional/Informational]
+**Profile:** Lite
 
 ## Summary
-- **Location**: [Where this takes place]
-- **Trigger**: [How players encounter this]
-- **Entities**: [Key NPCs, creatures, objects]
-- **Node Linkages**:
-  - **Follows From**: [Previous nodes that can lead to this one]
-  - **Connects To**: [Immediate next nodes this can lead to]
-  - **Sets Up**: [Future nodes this foreshadows or enables]
-
+- **Location:** [Where it happens]
+- **Trigger:** [How players reach this node]
+- **Entities:** [Main NPCs, monsters, items]
+- **Node Linkages:**
+  - **Follows From:** [What comes before]
+  - **Connects To:** [What comes next]
+  - **Sets Up:** [Future content this leads to]
 
 ## Primary Challenge
-[Single, focused description of main obstacle or content]
+[Brief description of the main obstacle or content]
 
 ## Basic Consequence
-**Success**: [Positive outcome]
-**Failure**: [Negative outcome]
+**Success:** [What happens if players succeed]
+**Failure:** [What happens if they fail]
 ```
+
+Using the right template ensures each node is consistent and easy to reference during play.
+
+#### 4.1 Example: Lite Node in Use
+
+```markdown
+# L2-O1 | Goblin Ambush on the Ridge
+**Version:** 1.0  
+**Node Type:** Optional  
+**Profile:** Lite
+
+## Summary
+- **Location:** Ridge trail near Phandalin
+- **Trigger:** Players take the mountain pass shortcut
+- **Entities:** 3 Goblins, 1 stolen supply crate
+- **Node Linkages:**
+  - **Follows From:** CH1-O2 (Wilderness Travel)
+  - **Connects To:** CH1-M2 (Cave Hideout)
+  - **Sets Up:** Redbrand connections if goblins interrogated
+
+## Primary Challenge
+The goblins attack from above with bows while one attempts to flee with stolen supplies.
+
+## Basic Consequence
+**Success:** Players recover the crate and find a Redbrand-marked letter.  
+**Failure:** Goblins escape with supplies; players suffer a morale setback and lose access to a potion.
 
 ### Standard Profile Sections
 
-All Lite sections plus the complete Standard profile structure:
+The Standard profile includes all Lite fields, plus:
 
 #### Enhanced Node Metadata
 
-Categorization and session planning information including tags, duration, difficulty, and pacing control.
+Tags, estimated session time, difficulty, and pacing tools.
 
 #### GM Focus and Intent
 
-Clear statement of what this node should accomplish, what players should experience, and how it advances the campaign.
+What this node is meant to achieve and how it moves the campaign forward.
 
 #### Character Integration
 
-Specific opportunities for each party member to contribute meaningfully, including class abilities, backgrounds, and personal story connections.
+Ways for each character to shine—class abilities, backgrounds, or personal arcs.
 
 #### Detailed Challenges and Obstacles
 
-Comprehensive breakdown of all potential challenges with multiple resolution approaches, difficulty scaling, and environmental factors.
+All possible challenges, different ways to solve them, scaling, and environment notes.
 
 #### Resource Management
 
-Tracking of party resources including HP, spell slots, equipment durability, and mental/emotional costs.
+Track party resources: HP, spells, equipment, and mental and emotional strain.
 
 #### Session Management
 
-Pacing guidance, attention management techniques, and adaptation strategies for different table dynamics.
+Tips for pacing, keeping players engaged, and adapting to surprises.
 
 #### Consequences and Ramifications
 
-Detailed outcomes for different resolution approaches, including immediate effects and long-term campaign implications.
+Immediate and long-term outcomes for different player choices.
 
 ## 5. Section-by-Section Guide
 
-This section provides detailed guidance for each component of the node structure, organized by profile level and complexity.
+This section explains every part of the node structure. By using these sections, you can build nodes that are structured, clear, and easy to run.
 
 ### Header and Identification (All Profiles)
 
 #### Title Format
 
-**Structure**: `[ID] | [Descriptive Name]`
-**Examples**:
+**Format:** `[ID] | [Descriptive Name]`  
+**Examples:**
 
 - L4-M1 | Temple Showdown with Nezznar
 - CH2-C3 | Meeting the Duke
 - W-DC-O5 | Hidden Thieves' Guild
 
-#### Node Type Classification
+#### Node Type
 
-**Critical**: Key story moments, turning points, revelations (Critical Path)
-**Mission**: Complex, multi-phase challenges that drive narrative (Critical Path)
-**Optional**: Enrichment that can be skipped without breaking story
-**Informational**: Context and exposition delivery
+- **Critical:** Main story event
+- **Mission:** Large, story-driving challenge
+- **Optional:** Extra, skippable content
+- **Informational:** Lore or background
 
 #### Profile Declaration
 
-**Lite**: Minimal fields, rapid creation
-**Standard**: Full structure and guidance
-**Comprehensive**: Maximum automation and validation with modular features
+- **Lite:** Minimal, fast setup
+- **Standard:** Full detail and structure
 
 #### Version Control
 
-**Format**: Major.Minor.Patch
+**Format:** Major.Minor.Patch
 
-- **Major** (1.0 → 2.0): Structural changes or profile upgrades
-- **Minor** (1.1 → 1.2): Content additions
-- **Patch** (1.1.1 → 1.1.2): Corrections and clarifications
+- **Major:** Big changes or upgrades
+- **Minor:** New content added
+- **Patch:** Small fixes or clarifications
 
 ### Summary Section (All Profiles)
 
-Provides immediate context for preparation and execution. Essential for quick reference and campaign navigation.
+Gives quick context for prep and play. Helps you find and use nodes quickly.
 
-**Required Components**:
+**Include:**
 
-- **Location**: Physical or conceptual space where content occurs
-- **Trigger**: Conditions that activate or lead to this node
-- **Entities**: All significant NPCs, creatures, objects, or forces involved
-- **Node Linkages**: Relationships to other campaign content
-  - **Follows From**: [Previous nodes that can lead to this one]
-  - **Connects To**: [Immediate next nodes this can lead to]
-  - **Sets Up**: [Future nodes this foreshadows or enables]
+- **Location:** Where it happens (physical or conceptual)
+- **Trigger:** How this node starts
+- **Entities:** Main NPCs, creatures, items
+- **Node Linkages:**
+  - **Follows From:** What leads to this node
+  - **Connects To:** What this node leads to next
+  - **Sets Up:** Future content set up by this node
 
-### Lite Profile Sections (Tutorial)
+### Lite: Primary Challenge
 
-#### Primary Challenge
+One clear description of the main obstacle or content. Should be short and ready to run.
 
-Single, focused description of the main obstacle or content. Should be specific enough to run immediately but concise enough for quick creation.
+**Examples:**
 
-**Examples**:
+- **Combat:** "Fight 3 goblins (AC 15, HP 7) in a cramped cave"
+- **Social:** "Convince the suspicious merchant (DC 15 Persuasion) to reveal the smuggling route"
+- **Exploration:** "Navigate a trapped corridor (DC 13 Investigation to spot, DC 15 Thieves' Tools to disarm)"
 
-- **Combat**: "Fight 3 goblins (AC 15, HP 7 each) in cramped cave tunnel"
-- **Social**: "Convince suspicious merchant (DC 15 Persuasion) to reveal smuggling route"
-- **Exploration**: "Navigate trapped corridor (DC 13 Investigation to detect, DC 15 Thieves' Tools to disarm)"
+### Lite: Basic Consequence
 
-#### Basic Consequence
+Simple outcomes for success or failure, linked to the story.
 
-Simple success/failure outcomes that connect to campaign narrative.
+**Format:**
 
-**Format**:
-
-``` markdown
-**Success**: [Positive outcome with specific benefits]
-**Failure**: [Negative outcome with specific complications]
+```markdown
+**Success:** [Describe the good outcome]
+**Failure:** [Describe the setback or complication]
 ```
 
-### Standard Profile Additional Sections (Tutorial)
+### Standard: Enhanced Node Metadata
 
-#### Enhanced Node Metadata (Standard Profile)
+- **Tags:** For sorting and filtering
+- **Duration:** Estimated prep/play time
+- **Difficulty:** How tough is the challenge
+- **Pacing Control:** How this node affects session flow
 
-**Tags**: Multi-select categorization for filtering and organization
-**Duration**: Estimated time investment for preparation and execution
-**Difficulty**: Challenge level appropriate for party capabilities
-**Pacing Control**: How this node affects campaign rhythm and momentum
+### Standard: GM Focus and Intent
 
-#### GM Focus and Intent (Standard Profile)
+- **Objectives:** What this node should achieve
+- **Player Experience:** What you want players to feel or learn
+- **Success Indicators:** How you know the node worked
 
-**Primary Objectives**: What this node must accomplish for campaign progression
-**Player Experience Goals**: Intended emotional and narrative impact
-**Success Indicators**: How to recognize when the node has achieved its purpose
+### Standard: Character Integration
 
-#### Character Integration (Standard Profile)
+- **Spotlights:** Ways for each character to shine
+- **Abilities:** How character skills or powers help
+- **Backgrounds:** Hooks to character stories
+- **Development:** Growth or change opportunities
 
-**Individual Spotlight Moments**: Specific opportunities for each party member
-**Class Ability Applications**: How different character abilities can contribute
-**Background Connections**: Links to character histories and motivations
-**Character Development**: Growth opportunities and story advancement
+### Standard: Detailed Challenges and Obstacles
 
-#### Detailed Challenges and Obstacles (Standard Profile)
+- **Layers:** Main, secondary, and hidden challenges
+- **Resolutions:** Combat, social, stealth, creative, environmental
+- **Scaling:** Adjust for party size and ability
+- **Environment:** Terrain, weather, lighting, etc.
 
-**Multi-Layered Challenges**: Primary, secondary, and hidden obstacles
-**Resolution Approaches**: Combat, social, stealth, environmental, and creative solutions
-**Scaling Guidelines**: Adaptation for different party sizes and capabilities
-**Environmental Factors**: Terrain, weather, lighting, and atmospheric elements
+### Standard: Resource Management
 
-#### Resource Management (Standard Profile)
+- **Costs:** HP, spells, equipment, time, social standing
+- **Recovery:** Rest spots, healing, resource refresh
+- **Tracking:** How to monitor party resources
+- **Depletion:** What happens if resources run out
 
-**Expected Resource Costs**: HP, spell slots, equipment, time, and social capital
-**Recovery Opportunities**: Rest points, healing, and resource restoration
-**Resource Tracking**: Systematic monitoring of party capabilities
-**Depletion Consequences**: What happens when resources run low
+### Standard: Session Management
 
-#### Session Management (Standard Profile)
+- **Prep Checklist:** What to set up before the session
+- **Pacing:** Keep things moving and engaging
+- **Attention:** Make sure all players are involved
+- **Adaptation:** Tips for reacting to surprises
 
-**Preparation Checklist**: Pre-session setup and material organization
-**Pacing Techniques**: Managing time and maintaining engagement
-**Attention Management**: Keeping all players involved and interested
-**Adaptation Strategies**: Responding to unexpected player choices
+### Standard: Consequences and Ramifications
 
-#### Consequences and Ramifications (Standard Profile)
-
-**Immediate Outcomes**: Direct results of player actions and choices
-**Short-term Effects**: Consequences that manifest within the current session or next
-**Long-term Ramifications**: Campaign-wide implications and future plot development
-**Contingency Planning**: How to maintain narrative momentum after misses or setbacks
+- **Immediate:** What happens right away
+- **Short-term:** Effects in this or next session
+- **Long-term:** Impacts on the campaign or world
+- **Contingency:** How to keep the story moving after setbacks
 
 ## 6. Implementation for Human DMs
 
 ### Getting Started
 
-#### Choose Your Starting Profile
+This section helps you start applying the Enhanced Node Structure, turning scattered ideas into actionable, organized content.
 
-**New to Node-Based Campaigns**: Start with Lite profile to learn the system without overwhelming complexity.
-**Experienced DMs**: Begin with Standard profile for comprehensive campaign management.
-**Tool-Heavy Campaigns**: Use Comprehensive profile with selective automation features.
+#### Pick Your Starting Profile
 
-#### Workflow Integration
+- **New to Node-Based Prep:** Start with Lite for a simple introduction.
+- **Experienced DMs:** Use Standard for full campaign management.
 
-**Session Preparation**: Use nodes as preparation checklists and reference materials.
-**During Play**: Reference summary sections for quick context and adaptation guidance.
-**Post-Session**: Update consequences and connections based on player choices.
+#### How to Use Nodes
 
-### Profile-Specific Workflows
+- **Before Sessions:** Use nodes as prep checklists and quick references.
+- **During Sessions:** Check the summary for context and adapt as needed.
+- **After Sessions:** Update consequences and connections based on what happened.
+
+### Profile Workflows
 
 #### Lite Profile Workflow
 
-1. **Identify Content** (2 minutes): Determine node type and basic concept
-2. **Write Summary** (2 minutes): Location, trigger, entities, connections
-3. **Define Challenge** (3 minutes): Single primary obstacle with specific mechanics
-4. **Set Consequences** (3 minutes): Clear success/failure outcomes
-
-**Total Time**: 10 minutes maximum
+1. **Identify Content** (2 min): Decide node type and main idea.
+2. **Write Summary** (2 min): Fill in location, trigger, entities, connections.
+3. **Define Challenge** (3 min): Write the main obstacle and mechanics.
+4. **Set Consequences** (3 min): Add clear outcomes for success/failure.  
+**Total:** 10 minutes or less.
 
 #### Standard Profile Workflow
 
-1. **Core Structure** (10 minutes): Complete Lite sections with enhanced detail
-2. **Character Integration** (10 minutes): Specific opportunities for each party member
-3. **Challenge Development** (10 minutes): Multiple approaches and scaling options
-4. **Session Planning** (10 minutes): Pacing, resources, and management guidance
-
-**Total Time**: 40 minutes average
-
-#### Comprehensive Profile Workflow
-
-**Note** — Workflow assumes you have the full specification open in **Technical_Reference.md**. This section summarises the steps; it is **not** the authoritative spec.
-
-1. **Standard Foundation** (40 minutes): Complete all Standard profile sections
-2. **Analytics Configuration** (5 minutes): Set privacy and tracking preferences
-3. **Automation Setup** (10 minutes): Enable desired automation features
-4. **Integration Testing** (5 minutes): Verify tool connections and validation
-
-**Total Time**: 60 minutes maximum
+1. **Core Structure** (10 min): Fill out Lite sections in more detail.
+2. **Character Integration** (10 min): Identify ways each character can contribute.
+3. **Challenge Development** (10 min): Include options, scaling, and depth.
+4. **Session Planning** (10 min): Add pacing, resource, and management notes.  
+**Total:** About 40 minutes.
 
 ### Best Practices
 
 #### Content Creation
 
-**Start Simple**: Begin with Lite profiles and upgrade as needed
-**Focus on Connections**: Ensure nodes link logically to campaign narrative
-**Player-Centric Design**: Always consider how content serves player experience
-**Iterative Improvement**: Use feedback and analytics to refine content
+- **Start Simple:** Use Lite, then upgrade as needed.
+- **Link Nodes:** Make sure each node connects to the story.
+- **Think Player-First:** Design with player experience in mind.
+- **Iterate and Improve:** Use feedback to improve nodes.
 
 #### Organization and Management
 
-**Consistent Naming**: Use clear, searchable node identifiers
-**Regular Updates**: Maintain current connections and consequences
-**Backup Systems**: Preserve content with version control
-**Collaborative Tools**: Share and develop content with other DMs
+- **Consistent Names:** Use clear, searchable IDs.
+- **Keep Updated:** Regularly review and update nodes.
+- **Back Up:** Use version control or backups.
+- **Collaborate:** Share and build with other DMs.
 
-#### Session Execution
+#### Running Sessions
 
-**Preparation Rituals**: Review relevant nodes before each session
-**Flexible Adaptation**: Use guidance to respond to unexpected player choices
-**Real-time Notes**: Update consequences and connections during play
-**Post-Session Review**: Analyze what worked and what needs improvement
+- **Prep Ritual:** Review relevant nodes before playing.
+- **Stay Flexible:** Be ready to adapt to player choices.
+- **Take Notes:** Update nodes during or after play.
+- **Review:** After the session, note what worked and what to improve.
 
 ## Appendix A: Profile Quick-Start Primers
 
-This appendix provides comprehensive one-page primers for each profile level, enabling immediate implementation without requiring full documentation review.
+This appendix gives you one-page overviews for each profile, so you can get started fast.
 
 ### A.1 Lite Profile Primer
 
-The Lite Profile primer provides everything needed to create functional campaign content in 5-10 minutes. Perfect for time-constrained preparation, learning the system, or creating simple encounters that maintain campaign connectivity.
+Everything you need to make working campaign content in 5–10 minutes. Great for quick prep, learning the system, or simple encounters that still connect to your campaign.
 
-**Key Features**: 6 essential fields, 5-minute workflow, immediate usability
-**Best For**: Quick encounters, last-minute prep, system learning, backup content
+**Key Features:** 6 fields, 5–10 minute workflow, ready to use  
+**Best For:** Quick encounters, last-minute prep, learning, backups
 
-*For complete Lite Profile guidance, see standalone primer document.*
+*For full Lite Profile details, see the separate primer document.*
 
 ### A.2 Standard Profile Primer
 
-The Standard Profile primer covers the complete Enhanced Node Structure system with 15-20 fields and comprehensive preparation guidance. Ideal for main campaign content requiring detailed preparation and professional presentation.
+Covers the full Enhanced Node Structure with 15–20 fields and detailed prep help. Best for main content that needs depth and polish.
 
-**Key Features**: Complete structure, 30-45 minute creation, professional quality
-**Best For**: Main story content, collaborative development, detailed encounters
+**Key Features:** Complete structure, 30–45 minute creation, professional detail  
+**Best For:** Main story, collaboration, rich encounters
 
-*For complete Standard Profile guidance, see standalone primer document.*
-
-### A.3 Comprehensive Profile Primer
-
-**Specification reference** — This primer is *orientation only*. The full Comprehensive profile specification (analytics, automation hooks, validation) lives in **Technical_Reference.md**
-
-The Comprehensive Profile primer provides enterprise-level features including advanced analytics, automation capabilities, and extensive tool integration. Designed for professional campaign management and data-driven optimization.
-
-**Key Features**: 25+ fields, advanced analytics, automation, API integration
-**Best For**: Professional campaigns, tool integration, research applications
-
-*For complete Comprehensive Profile guidance, see standalone primer document.*
-
-### Profile Selection Guide
-
-``` markdown
-Choose Your Profile Based on Your Needs
-═══════════════════════════════════════════════════════════════════════════════
-
-Time Available    │ Content Type      │ Technical Needs   │ Recommended Profile
-─────────────────┼──────────────────┼──────────────────┼────────────────────
-5-10 minutes     │ Any               │ Basic             │ Lite
-30-45 minutes    │ Main campaign     │ Standard          │ Standard
-45-60 minutes    │ Professional      │ Advanced          │ Comprehensive
-─────────────────┼──────────────────┼──────────────────┼────────────────────
-Learning system  │ Any               │ Any               │ Start with Lite
-Time pressure    │ Any               │ Any               │ Lite
-Collaboration    │ Detailed content  │ Standard+         │ Standard/Comprehensive
-Tool integration │ Any               │ API required      │ Comprehensive
-Analytics needs  │ Any               │ Data collection   │ Comprehensive
-```
-
-### Upgrade Path Visualization
-
-``` markdown
-Profile Progression and Feature Evolution
-═══════════════════════════════════════════════════════════════════════════════
-
-Lite Profile (5-10 min)
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ • Header & Summary     • Primary Challenge     • Basic Consequences         │
-│ • Resolution Options   • Quick Notes           • Essential Connections      │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                    ↓ Add Detail
-Standard Profile (30-45 min)
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ All Lite Features Plus:                                                    │
-│ • Character Integration    • Detailed Mechanics    • Resource Management   │
-│ • Session Planning        • Extended Consequences  • Quality Assurance     │
-└─────────────────────────────────────────────────────────────────────────────┘
-                                    ↓ Add Technology
-Comprehensive Profile (45-60 min)
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ All Standard Features Plus:                                                │
-│ • Analytics Config        • Automation Features    • API Integration       │
-│ • Collaboration Tools     • Advanced Validation    • Enterprise Features   │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-All upgrades are lossless - content from lower profiles becomes foundation for higher profiles
-```
-
-### Quick Decision Matrix
-
-Use this matrix to quickly determine which profile best fits your immediate needs:
-
-| Question | Lite | Standard | Comprehensive |
-|----------|------|----------|---------------|
-| Do I have less than 15 minutes? | ✅ Yes | ❌ No | ❌ No |
-| Is this a simple encounter? | ✅ Yes | ⚠️ Maybe | ❌ No |
-| Do I need detailed character integration? | ❌ No | ✅ Yes | ✅ Yes |
-| Will I share this with other DMs? | ⚠️ Maybe | ✅ Yes | ✅ Yes |
-| Do I need analytics or automation? | ❌ No | ❌ No | ✅ Yes |
-| Is this for professional use? | ❌ No | ⚠️ Maybe | ✅ Yes |
-
-**Legend**: ✅ Ideal fit, ⚠️ Possible but consider alternatives, ❌ Not recommended
-
-### Implementation Recommendations
-
-**For New Users**:
-
-1. Start with Lite Profile to learn the system fundamentals
-2. Create 3-5 Lite nodes to understand connections and workflow
-3. Upgrade one Lite node to Standard to experience the full structure
-4. Consider Comprehensive only after mastering Standard Profile
-
-**For Experienced DMs**:
-
-1. Assess your typical preparation time and content complexity needs
-2. Choose Standard for most main campaign content
-3. Use Lite for quick encounters and backup content
-4. Implement Comprehensive for professional or collaborative projects
-
-**For Tool Developers**:
-
-1. Support all three profiles with appropriate user interfaces
-2. Provide clear upgrade paths between profiles
-3. Implement analytics and automation features gradually
-4. Ensure privacy and security compliance for Comprehensive features
-
-The profile primers provide immediate, actionable guidance for implementing the Enhanced Node Structure system at any complexity level, ensuring that users can begin creating professional-quality campaign content immediately while having clear paths for growth and enhancement.
-
-## Appendix B: CC-BY-SA 4.0 License
+*For full Standard Profile details, see the separate primer document.*
