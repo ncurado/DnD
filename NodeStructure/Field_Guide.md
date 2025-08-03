@@ -1,10 +1,10 @@
-# Enhanced Standardized Node Structure – Field Guide
+# Roleplay Adventure Node System (RANS) – Field Guide
 
-**Version:** 7.1
+**Version:** 1.0
 
 ## Overview
 
-The Enhanced Standardized Node Structure is a practical system for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
+The Roleplay Adventure Node System (RANS) is a practical framework for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
 
 Each node balances two dimensions:
 
@@ -16,8 +16,7 @@ This two-axis system helps you choose the right level of prep for each piece of 
 Whether you're building a homebrew world, running a published module, or collaborating with others, this guide will help you stay organized, prep efficiently, and run more engaging sessions.
 
 **Author:** Nuno Curado  
-**Documentation:** with help from Manus AI  
-**Date:** 8 June 2025
+**Date:** 1 August 2025
 
 ## License
 
@@ -27,14 +26,14 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 ## Table of Contents
 
-1. [What is the Node Structure?](#1-what-is-the-node-structure)
-2. [The Two-Axis System](#2-the-two-axis-system)
-3. [Depth Profiles Explained](#3-depth-profiles-explained)
+1. [What is the Node Structure?](#what-is-the-node-structure)
+2. [The Two-Axis System](#the-two-axis-system)
+3. [Depth Profiles Explained](#depth-profiles-explained)
    - [Lite Profile](#lite-profile)
    - [Standard Profile](#standard-profile)
-4. [Creating Your First Node](#4-creating-your-first-node)
-5. [Section-by-Section Guide](#5-section-by-section-guide)
-6. [Implementation for Human DMs](#6-implementation-for-human-dms)
+4. [Creating Your First Node](#creating-your-first-node)
+5. [Sections Guide](#sections-guide)
+6. [Implementation for Human DMs](#implementation-for-human-dms)
 
 ## Appendices
 
@@ -42,9 +41,9 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 ---
 
-## 1. What Is the Node Structure?
+## What Is the Node Structure?
 
-The Enhanced Standardized Node Structure is a practical system for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
+This section builds on the Overview by introducing the core principles behind RANS and explaining how its structure supports flexible, organized campaign prep.
 
 Each node balances two dimensions:
 
@@ -68,11 +67,11 @@ This guide helps you use this two-axis approach to prep efficiently and run more
 - **Optional Analytics:** Optionally track outcomes while maintaining privacy.
 - **Modular Automation:** Add automation features as needed, not all at once.
 
-## 2. The Two-Axis System
+## The Two-Axis System
 
 ### What Are the Two Axes?
 
-The Node Structure uses **two separate axes**:
+The RANS uses **two separate axes**:
 
 | **Axis**            | **What It Means**                                      | **Examples**                                |
 |---------------------|--------------------------------------------------------|---------------------------------------------|
@@ -102,7 +101,7 @@ The Node Structure uses **two separate axes**:
 
 ### Who Benefits from Each Profile?
 
-Here’s how common DM styles align with the Node Profiles to support your prep and play needs.
+Here’s how common DM styles align with the RANS Profiles to support your prep and play needs.
 
 | **DM Style**        | **Core Need or Challenge**                                    | **Best Starting Profile**                      |
 |---------------------|---------------------------------------------------------------|------------------------------------------------|
@@ -114,7 +113,7 @@ Here’s how common DM styles align with the Node Profiles to support your prep 
 | Tool-Driven         | Uses VTTs, automation, and digital tools                      | **Standard** – includes full metadata          |
 | Mentor              | Teaching or guiding others through examples                   | **Lite → Standard** progression recommended    |
 
-## 3. Depth Profiles Explained
+## Depth Profiles Explained
 
 ### Lite Profile
 
@@ -132,7 +131,7 @@ Includes only the basics:
 
 ### Standard Profile
 
-These profiles represent the schema depth axis of the system, determining how much structure each node includes.
+These profiles represent the schema depth axis of RANS, determining how much structure each node includes.
 
 **Purpose:** Full-featured campaign management  
 **Time to Create:** 30–45 minutes  
@@ -152,7 +151,7 @@ Includes everything from Lite, plus:
 
 **No Data Loss:** You can upgrade any node from Lite to Standard without losing content.
 
-## 4. Creating Your First Node
+## Creating Your First Node
 
 ### Step 1: Decide on Narrative Priority and Detail
 
@@ -170,7 +169,7 @@ Includes everything from Lite, plus:
 
 ### Step 2: Use the Right Template
 
-**Lite Template (for any node type):**
+**Lite Template (for any node type in RANS):**
 
 ```markdown
 # [ID] | [Name]
@@ -197,7 +196,7 @@ Includes everything from Lite, plus:
 
 Using the right template ensures each node is consistent and easy to reference during play.
 
-#### 4.1 Example: Lite Node in Use
+### 4.1 Example: Lite Node in Use
 
 ```markdown
 # L2-O1 | Goblin Ambush on the Ridge
@@ -223,7 +222,7 @@ The goblins attack from above with bows while one attempts to flee with stolen s
 
 ### Standard Profile Sections
 
-The Standard profile includes all Lite fields, plus:
+The Standard profile in RANS includes all Lite fields, plus:
 
 #### Enhanced Node Metadata
 
@@ -253,9 +252,9 @@ Tips for pacing, keeping players engaged, and adapting to surprises.
 
 Immediate and long-term outcomes for different player choices.
 
-## 5. Section-by-Section Guide
+## Sections Guide
 
-This section explains every part of the node structure. By using these sections, you can build nodes that are structured, clear, and easy to run.
+This section explains every part of the RANS structure. By using these sections, you can build nodes that are structured, clear, and easy to run.
 
 ### Header and Identification (All Profiles)
 
@@ -290,7 +289,7 @@ This section explains every part of the node structure. By using these sections,
 
 ### Summary Section (All Profiles)
 
-Gives quick context for prep and play. Helps you find and use nodes quickly.
+Gives quick context for prep and play. Helps you find and use RANS nodes quickly.
 
 **Include:**
 
@@ -371,11 +370,11 @@ Simple outcomes for success or failure, linked to the story.
 - **Long-term:** Impacts on the campaign or world
 - **Contingency:** How to keep the story moving after setbacks
 
-## 6. Implementation for Human DMs
+## Implementation for Human DMs
 
 ### Getting Started
 
-This section helps you start applying the Enhanced Node Structure, turning scattered ideas into actionable, organized content.
+This section helps you start applying RANS, turning scattered ideas into actionable, organized content.
 
 #### Pick Your Starting Profile
 
@@ -431,7 +430,7 @@ This section helps you start applying the Enhanced Node Structure, turning scatt
 
 ## Appendix A: Profile Quick-Start Primers
 
-This appendix gives you one-page overviews for each profile, so you can get started fast.
+This appendix gives you one-page overviews for each RANS profile, so you can get started fast.
 
 ### A.1 Lite Profile Primer
 
@@ -444,7 +443,7 @@ Everything you need to make working campaign content in 5–10 minutes. Great fo
 
 ### A.2 Standard Profile Primer
 
-Covers the full Enhanced Node Structure with 15–20 fields and detailed prep help. Best for main content that needs depth and polish.
+Covers the full RANS structure with 15–20 fields and detailed prep help. Best for main content that needs depth and polish.
 
 **Key Features:** Complete structure, 30–45 minute creation, professional detail  
 **Best For:** Main story, collaboration, rich encounters
