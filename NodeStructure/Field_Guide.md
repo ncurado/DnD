@@ -147,9 +147,9 @@ Includes everything from Lite, plus:
 - Session management
 - Full consequences and follow-ups
 
-### Upgrading Profiles
+### Upgrading Nodes
 
-**No Data Loss:** You can upgrade any node from Lite to Standard without losing content.
+Upgrading a node from Lite to Standard does not require rewriting existing content—only adding additional details, such as character integration, pacing tools, and resource tracking. All Lite fields are preserved and reused within the Standard format.
 
 ## Creating Your First Node
 
