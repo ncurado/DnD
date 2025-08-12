@@ -1,10 +1,10 @@
 # Roleplay Adventure Node System (RANS) – Field Guide
 
-**Version:** 1.0
+**Version:** 1.1
 
 ## Overview
 
-The Roleplay Adventure Node System (RANS) is a practical framework for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called “nodes.” Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
+The Roleplay Adventure Node System (RANS) is a practical framework for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called "nodes." Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
 
 Each node balances two dimensions:
 
@@ -16,7 +16,8 @@ This two-axis system helps you choose the right level of prep for each piece of 
 Whether you're building a homebrew world, running a published module, or collaborating with others, this guide will help you stay organized, prep efficiently, and run more engaging sessions.
 
 **Author:** Nuno Curado  
-**Date:** 1 August 2025
+**Date:** 1 August 2025  
+**Updated:** 12 August 2025 (Enhanced Entities field approach)
 
 ## License
 
@@ -50,7 +51,7 @@ Each node balances two dimensions:
 - **Narrative Priority** – How important is this content to the overall story?
 - **Schema Depth** – How much structure and prep detail does it contain?
 
-This guide helps you use this two-axis approach to prep efficiently and run more engaging sessions—whether you’re building a homebrew world, running a published module, or collaborating with others.
+This guide helps you use this two-axis approach to prep efficiently and run more engaging sessions—whether you're building a homebrew world, running a published module, or collaborating with others.
 
 ### Why Use This System?
 
@@ -101,7 +102,7 @@ The RANS uses **two separate axes**:
 
 ### Who Benefits from Each Profile?
 
-Here’s how common DM styles align with the RANS Profiles to support your prep and play needs.
+Here's how common DM styles align with the RANS Profiles to support your prep and play needs.
 
 | **DM Style**        | **Core Need or Challenge**                                    | **Best Starting Profile**                      |
 |---------------------|---------------------------------------------------------------|------------------------------------------------|
@@ -125,7 +126,7 @@ Includes only the basics:
 
 - Title and identification
 - Node type and version
-- Summary (key people, places, connections)
+- Summary (key people, places, connections, **structured entities**)
 - Main challenge or content
 - Basic success and failure outcomes
 
@@ -143,6 +144,7 @@ Includes everything from Lite, plus:
 - GM intent and focus
 - Character integration
 - Detailed challenges and options
+- **Enhanced entity management with structured format**
 - Resource tracking
 - Session management
 - Full consequences and follow-ups
@@ -155,7 +157,7 @@ Upgrading a node from Lite to Standard does not require rewriting existing conte
 
 ### Step 1: Decide on Narrative Priority and Detail
 
-**Narrative Priority:** What is this node’s role?
+**Narrative Priority:** What is this node's role?
 
 - **Critical:** Key story event (main story)
 - **Mission:** Major, multi-step challenge (main story)
@@ -180,7 +182,7 @@ Upgrading a node from Lite to Standard does not require rewriting existing conte
 ## Summary
 - **Location:** [Where it happens]
 - **Trigger:** [How players reach this node]
-- **Entities:** [Main NPCs, monsters, items]
+- **Entities:** [Structured format: NPCs: [list]; Creatures: [list]; Items: [list]]
 - **Node Linkages:**
   - **Follows From:** [What comes before]
   - **Connects To:** [What comes next]
@@ -207,7 +209,7 @@ Using the right template ensures each node is consistent and easy to reference d
 ## Summary
 - **Location:** Ridge trail near Phandalin
 - **Trigger:** Players take the mountain pass shortcut
-- **Entities:** 3 Goblins, 1 stolen supply crate
+- **Entities:** NPCs: Captured merchant (Linene's cousin); Creatures: 3 Goblins (Cragmaw scouts); Items: Stolen supply crate, Redbrand letter
 - **Node Linkages:**
   - **Follows From:** CH1-O2 (Wilderness Travel)
   - **Connects To:** CH1-M2 (Cave Hideout)
@@ -219,6 +221,7 @@ The goblins attack from above with bows while one attempts to flee with stolen s
 ## Basic Consequence
 **Success:** Players recover the crate and find a Redbrand-marked letter.  
 **Failure:** Goblins escape with supplies; players suffer a morale setback and lose access to a potion.
+```
 
 ### Standard Profile Sections
 
@@ -239,6 +242,14 @@ Ways for each character to shine—class abilities, backgrounds, or personal arc
 #### Detailed Challenges and Obstacles
 
 All possible challenges, different ways to solve them, scaling, and environment notes.
+
+#### Enhanced Entity Management
+
+For Standard nodes, the Entities field can include more detailed categorization:
+
+```markdown
+**Entities:** NPCs: [important characters]; Creatures: [monsters/beasts]; Key Monsters: [boss encounters]; Allies: [friendly NPCs]; Enemies: [hostile characters]; Items: [important objects]
+```
 
 #### Resource Management
 
@@ -295,11 +306,37 @@ Gives quick context for prep and play. Helps you find and use RANS nodes quickly
 
 - **Location:** Where it happens (physical or conceptual)
 - **Trigger:** How this node starts
-- **Entities:** Main NPCs, creatures, items
+- **Entities:** Structured format for all NPCs, creatures, and items in the node
 - **Node Linkages:**
   - **Follows From:** What leads to this node
   - **Connects To:** What this node leads to next
   - **Sets Up:** Future content set up by this node
+
+### Enhanced Entities Field
+
+The Entities field is the central place for tracking all characters, creatures, and important objects in a node. Use a structured format for best results:
+
+#### Lite Profile Format:
+```
+NPCs: [character names]; Creatures: [monster names]; Items: [important objects]
+```
+
+#### Standard Profile Format:
+```
+NPCs: [important characters]; Creatures: [monsters/beasts]; Key Monsters: [boss encounters]; Allies: [friendly NPCs]; Enemies: [hostile characters]; Items: [important objects]
+```
+
+#### Examples:
+
+**Lite:**
+```
+Entities: NPCs: Guard Captain Reese, Merchant Tobias; Creatures: 2 Dire Wolves; Items: Magic sword, Ancient map
+```
+
+**Standard:**
+```
+Entities: NPCs: Guard Captain Reese (quest giver); Creatures: 2 Dire Wolves (patrol); Key Monsters: Alpha Wolf (CR 3, pack leader); Allies: Merchant Tobias (information source); Enemies: Bandit Leader Vex (recurring villain); Items: Magic sword (+1 longsword), Ancient map (leads to treasure)
+```
 
 ### Lite: Primary Challenge
 
@@ -392,9 +429,9 @@ This section helps you start applying RANS, turning scattered ideas into actiona
 #### Lite Profile Workflow
 
 1. **Identify Content** (2 min): Decide node type and main idea.
-2. **Write Summary** (2 min): Fill in location, trigger, entities, connections.
+2. **Write Summary** (3 min): Fill in location, trigger, structured entities, connections.
 3. **Define Challenge** (3 min): Write the main obstacle and mechanics.
-4. **Set Consequences** (3 min): Add clear outcomes for success/failure.  
+4. **Set Consequences** (2 min): Add clear outcomes for success/failure.  
 **Total:** 10 minutes or less.
 
 #### Standard Profile Workflow
@@ -402,7 +439,8 @@ This section helps you start applying RANS, turning scattered ideas into actiona
 1. **Core Structure** (10 min): Fill out Lite sections in more detail.
 2. **Character Integration** (10 min): Identify ways each character can contribute.
 3. **Challenge Development** (10 min): Include options, scaling, and depth.
-4. **Session Planning** (10 min): Add pacing, resource, and management notes.  
+4. **Entity Details** (5 min): Expand Entities field with detailed descriptions.
+5. **Session Planning** (5 min): Add pacing, resource, and management notes.  
 **Total:** About 40 minutes.
 
 ### Best Practices
@@ -412,6 +450,7 @@ This section helps you start applying RANS, turning scattered ideas into actiona
 - **Start Simple:** Use Lite, then upgrade as needed.
 - **Link Nodes:** Make sure each node connects to the story.
 - **Think Player-First:** Design with player experience in mind.
+- **Use Structured Entities:** Follow the format for better organization and automation.
 - **Iterate and Improve:** Use feedback to improve nodes.
 
 #### Organization and Management
@@ -434,18 +473,58 @@ This appendix gives you one-page overviews for each RANS profile, so you can get
 
 ### A.1 Lite Profile Primer
 
-Everything you need to make working campaign content in 5–10 minutes. Great for quick prep, learning the system, or simple encounters that still connect to your campaign.
+**Time Investment:** 5-10 minutes per node  
+**Best For:** Quick encounters, last-minute prep, simple content
 
-**Key Features:** 6 fields, 5–10 minute workflow, ready to use  
-**Best For:** Quick encounters, last-minute prep, learning, backups
+**Essential Fields:**
+- Header (ID, Name, Version, Type, Profile)
+- Summary (Location, Trigger, Structured Entities, Node Linkages)
+- Primary Challenge
+- Basic Consequence
 
-*For full Lite Profile details, see the separate primer document.*
+**Entities Format:**
+```
+NPCs: [character names]; Creatures: [monster names]; Items: [important objects]
+```
+
+**Quick Tips:**
+- Keep descriptions brief but actionable
+- Focus on what players will encounter
+- Use structured Entities format for better organization
+- Link to other nodes for campaign flow
 
 ### A.2 Standard Profile Primer
 
-Covers the full RANS structure with 15–20 fields and detailed prep help. Best for main content that needs depth and polish.
+**Time Investment:** 30-45 minutes per node  
+**Best For:** Main campaign content, detailed prep, collaboration
 
-**Key Features:** Complete structure, 30–45 minute creation, professional detail  
-**Best For:** Main story, collaboration, rich encounters
+**All Lite Fields Plus:**
+- Enhanced Node Metadata
+- GM Focus and Intent
+- Character Integration
+- Detailed Challenges and Obstacles
+- Enhanced Entity Management with detailed descriptions
+- Resource Management
+- Session Management
+- Consequences and Ramifications
 
-*For full Standard Profile details, see the separate primer document.*
+**Enhanced Entities Format:**
+```
+NPCs: [detailed characters]; Creatures: [monsters]; Key Monsters: [bosses]; Allies: [friends]; Enemies: [foes]; Items: [objects]
+```
+
+**Quick Tips:**
+- Build on Lite foundation, don't rewrite
+- Use detailed Entities format for comprehensive tracking
+- Include scaling options for different party compositions
+- Plan for multiple session outcomes
+
+---
+
+**Version 1.1 Changes:**
+- Enhanced Entities field with structured format for better organization and automation support
+- Added comprehensive examples showing proper Entities usage for both Lite and Standard profiles
+- Updated workflow guidance to include structured entity management
+- Improved examples throughout to demonstrate the enhanced Entities approach
+- Maintained backward compatibility while adding new organizational capabilities
+
