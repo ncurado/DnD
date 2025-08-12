@@ -17,7 +17,7 @@ Whether you're building a homebrew world, running a published module, or collabo
 
 **Author:** Nuno Curado  
 **Date:** 1 August 2025  
-**Updated:** 8 December 2025 (Enhanced Entities field approach)
+**Updated:** 12 August 2025 (Enhanced Entities field approach)
 
 ## License
 
