@@ -183,10 +183,7 @@ Upgrading a node from Lite to Standard does not require rewriting existing conte
 - **Location:** [Where it happens]
 - **Trigger:** [How players reach this node]
 - **Entities:** [Structured format: NPCs: [list]; Creatures: [list]; Items: [list]]
-- **Node Linkages:**
-  - **Follows From:** [What comes before]
-  - **Connects To:** [What comes next]
-  - **Sets Up:** [Future content this leads to]
+- **Node Linkages:** Follows From: [node-id1, node-id2]; Connects To: [node-id3, node-id4]; Sets Up: [node-id5, node-id6]
 
 ## Primary Challenge
 [Brief description of the main obstacle or content]
@@ -210,10 +207,7 @@ Using the right template ensures each node is consistent and easy to reference d
 - **Location:** Ridge trail near Phandalin
 - **Trigger:** Players take the mountain pass shortcut
 - **Entities:** NPCs: Captured merchant (Linene's cousin); Creatures: 3 Goblins (Cragmaw scouts); Items: Stolen supply crate, Redbrand letter
-- **Node Linkages:**
-  - **Follows From:** CH1-O2 (Wilderness Travel)
-  - **Connects To:** CH1-M2 (Cave Hideout)
-  - **Sets Up:** Redbrand connections if goblins interrogated
+- **Node Linkages:** Follows From: [CH1-O2]; Connects To: [CH1-M2]; Sets Up: [L2-O3, L2-O4]
 
 ## Primary Challenge
 The goblins attack from above with bows while one attempts to flee with stolen supplies.
@@ -307,10 +301,42 @@ Gives quick context for prep and play. Helps you find and use RANS nodes quickly
 - **Location:** Where it happens (physical or conceptual)
 - **Trigger:** How this node starts
 - **Entities:** Structured format for all NPCs, creatures, and items in the node
-- **Node Linkages:**
-  - **Follows From:** What leads to this node
-  - **Connects To:** What this node leads to next
-  - **Sets Up:** Future content set up by this node
+- **Node Linkages:** Structured format for node connections using IDs only
+  - **Follows From:** [node-id1, node-id2] - What leads to this node
+  - **Connects To:** [node-id3, node-id4] - What this node leads to next  
+  - **Sets Up:** [node-id5, node-id6] - Future content set up by this node
+
+### Enhanced Node Linkages Format
+
+The Node Linkages field uses a structured format similar to Entities for better organization and automation support:
+
+#### Format:
+```
+Node Linkages: Follows From: [node-id1, node-id2]; Connects To: [node-id3, node-id4]; Sets Up: [node-id5, node-id6]
+```
+
+#### Guidelines:
+- **Use Node IDs only** - no descriptive text needed in the structured format
+- **Separate multiple IDs** with commas within brackets
+- **Separate categories** with semicolons
+- **Empty categories** can be omitted or shown as empty brackets []
+
+#### Examples:
+
+**Simple Connection:**
+```
+Node Linkages: Follows From: [L5-O1]; Connects To: [L5-O3]
+```
+
+**Multiple Connections:**
+```
+Node Linkages: Follows From: [L5-O1, L5-O2]; Connects To: [L5-O4, L5-O5]; Sets Up: [L6-M1]
+```
+
+**Partial Connections:**
+```
+Node Linkages: Connects To: [L5-O3, L5-O4]; Sets Up: [L5-M2]
+```
 
 ### Enhanced Entities Field
 
@@ -523,8 +549,9 @@ NPCs: [detailed characters]; Creatures: [monsters]; Key Monsters: [bosses]; Alli
 
 **Version 1.1 Changes:**
 - Enhanced Entities field with structured format for better organization and automation support
-- Added comprehensive examples showing proper Entities usage for both Lite and Standard profiles
-- Updated workflow guidance to include structured entity management
-- Improved examples throughout to demonstrate the enhanced Entities approach
+- Enhanced Node Linkages field with structured format using node IDs for clearer list management
+- Added comprehensive examples showing proper Entities and Node Linkages usage for both Lite and Standard profiles
+- Updated workflow guidance to include structured entity and linkage management
+- Improved examples throughout to demonstrate the enhanced structured approaches
 - Maintained backward compatibility while adding new organizational capabilities
 
