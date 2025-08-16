@@ -12,7 +12,15 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 ---
 
-Note: Above all, information present in the campaign material takes precedence. Refer to core sources, statblocks, and expanded materials only to supplement and enrich details not specified in the campaign.
+**Template Structure:** This template serves two purposes:
+- **Sections 1-20**: Comprehensive NPC development guide for ChatGPT to create rich, detailed NPCs
+- **Sections 21-22**: Structured data extraction for Foundry VTT's Intelligent NPCs module
+
+**Note:** Above all, information present in the campaign material takes precedence. Refer to core sources, statblocks, and expanded materials only to supplement and enrich details not specified in the campaign.
+
+---
+
+# Part I: ChatGPT Development Sections
 
 1. Name
 
@@ -244,45 +252,51 @@ Write sample dialogue (up to 1000 characters), drawing from Speech Patterns to r
 
 Include any extra details or nuances that provide flavor or situational responses. This could cover unique traits, behavior during special circumstances, or thematic elements not covered elsewhere.
 
-Public Section
+---
+
+# Part II: Foundry VTT Intelligent NPCs Module Data Format
+
+*Extract the following sections from the comprehensive profile above for use with the Intelligent NPCs module. Character limits reflect module requirements.*
+
+## 21. Public Section
 
 This section describes how the NPC is perceived by others, using third-person descriptions. These are details that any observer or person interacting with the NPC would notice or learn through casual observation or general reputation.
 
-2.1 What Everyone Knows
+### 21.1 What Everyone Knows
 
 Up to 750 characters. This section includes general knowledge about the NPC that could be easily learned through casual conversation. Examples include their reputation, general demeanor, or commonly known background details.
 
-2.2 Appearance
+### 21.2 Appearance
 
-Up to 750 characters. This is a third-person description of the NPC's appearance as perceived by others. It should reflect the Appearance section from the preamble and ensure consistency with physical traits, clothing, or notable items visible at a glance.
+Up to 750 characters. This is a third-person description of the NPC's appearance as perceived by others. It should reflect the Appearance section from Part I and ensure consistency with physical traits, clothing, or notable items visible at a glance.
 
-Private Section
+## 22. Private Section
 
-This section reflects the NPC’s self-perception and is described in the first person. It includes personal thoughts, motivations, and experiences that may not be immediately obvious to others.
+This section reflects the NPC's self-perception and is described in the first person. It includes personal thoughts, motivations, and experiences that may not be immediately obvious to others.
 
-3.1 Background
+### 22.1 Background
 
 Up to 750 characters. Describe key events in the NPC's past, including formative experiences and significant milestones. This should provide insight into what shaped their current personality and motivations.
 
-3.2 Personality
+### 22.2 Personality
 
-Up to 6000 characters. Explore the NPC’s deeper personality traits, personal struggles, and how they interact with others on a more intimate level. This section should expand on inner thoughts and how the NPC views the world around them.
+Up to 6000 characters. Explore the NPC's deeper personality traits, personal struggles, and how they interact with others on a more intimate level. This section should expand on inner thoughts and how the NPC views the world around them.
 
-3.3 Goals
+### 22.3 Goals
 
 Up to 6000 characters. Outline both short-term and long-term goals, as well as how committed the NPC is to achieving them. These should align with motivations described in previous sections.
 
-3.4 Connections
+### 22.4 Connections
 
 Up to 6000 characters. Describe meaningful relationships, whether with other NPCs, factions, or organizations. Outline how the NPC perceives these connections and any emotional or historical significance they hold.
 
-3.5 Example Sentences
+### 22.5 Example Sentences
 
-Up to 2000 characters. Provide example sentences the NPC might say, based on Speech Patterns. Include instances where the NPC might refer to themselves in the third person if relevant.
+Up to 2000 characters. Provide example sentences the NPC might say, based on Speech Patterns from Part I. Include instances where the NPC might refer to themselves in the third person if relevant.
 
-3.6 Initial Memory
+### 22.6 Initial Memory
 
-Up to 6000 characters. Describe a recent memory or thought central to the NPC’s actions when first encountering the players. This should provide a personal, immersive point of reference that influences their initial behavior.
+Up to 6000 characters. Describe a recent memory or thought central to the NPC's actions when first encountering the players. This should provide a personal, immersive point of reference that influences their initial behavior.
 
 Source Reference
 

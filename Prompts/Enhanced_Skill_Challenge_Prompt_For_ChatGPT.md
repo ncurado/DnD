@@ -17,56 +17,38 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 ## ✅ Prompt
 
-I want to run a skill challenge for my D&D 5e party using the Skill Matrix we've built. Your job is to help me design and run it.
+I want to run a D&D 5e skill challenge for my party. Your job is to help me design and run it using the character skill information provided below.
 
-The challenge should:
-- Fit the context I provide (or ask questions if it's unclear)
-- Recommend a number of phases, success threshold, and failure limit, and explain *why* based on party size, risk level, and narrative urgency
-- Use the PC matrix below to generate 2–3 tailored options per player per phase
-- Offer a mix of skill options—preferably one involving a strong skill and one with a lesser-used or creative angle
-- Track team progress (successes and failures) as we go
-- Include guidance on critical successes or failures and possible soft complications (partial successes, long-term consequences, NPC suspicion, etc.)
+**Skill Challenge Basics:** These are multi-step challenges requiring multiple successful skill checks before accumulating too many failures. Each player should get meaningful participation options based on their character's abilities.
 
-Here’s the PC skill matrix you can use:
+## 📈 ChatGPT Responsibilities
 
-Characters:
-- Hawkwind (Fighter 4): Proficient in Athletics, Perception, Insight
-- Targ (Barbarian 3 / Cleric 1): Proficient in Athletics, Intimidation, Survival, Perception
-- Silvius (Sorcerer 4): Proficient in Deception, Persuasion, Arcana, Insight
-- Zar (Warlock 4): Proficient in Deception, Arcana, Stealth
-- Goldrick (Paladin 4): Proficient in Athletics, Persuasion, Religion, Insight, Intimidation
-- Calogan (Warlock 4): Proficient in Deception, Arcana, Investigation, History, Persuasion, Intimidation
-- SmokeIt (Druid 4): Proficient in Nature, Perception, Insight, Survival, Animal Handling
+ChatGPT should:
+- **Ask setup questions**: Type of challenge (e.g., stealth escape, exploration, diplomacy, pursuit), stakes (what happens on success/failure), urgency (time-sensitive, chaotic, etc.), party size or missing members, special context (environment, factions, NPCs), and desired challenge scope (short, medium, extended).
+- **Propose phases and thresholds**: Recommend the number of phases and the success/failure thresholds, with an explanation based on party size, risk level, and narrative urgency. Provide a scaling guideline: short (3–4 successes), medium (5–6), extended (7–8).
+- **Generate tailored options**: For each character, generate 2–3 tailored options per phase. Ensure variation across phases and include at least one option using a proficient skill and one using a creative or alternative skill.
+- **Track progress**: Track the team's success and failure count per phase. Treat critical successes as 2 successes and critical failures as 2 failures (or as a major complication).
+- **Present consequences**: Clearly present the consequences for overall success, failure, or mixed outcomes.
+- **State assumptions**: Explicitly call out any assumptions about tone, urgency, enemy behavior, map/environment, or other contextual factors for DM confirmation.
 
----
+Here's my current party composition:
 
-## 🎯 ChatGPT should begin by asking me to describe:
+**Characters & Skills:**
+- **Hawkwind** (Fighter 4): Athletics, Perception, Insight
+- **Targ** (Barbarian 3/Cleric 1): Athletics, Intimidation, Survival, Perception
+- **Silvius** (Sorcerer 4): Deception, Persuasion, Arcana, Insight
+- **Zar** (Warlock 4): Deception, Arcana, Stealth
+- **Goldrick** (Paladin 4): Athletics, Persuasion, Religion, Insight, Intimidation
+- **Calogan** (Warlock 4): Deception, Arcana, Investigation, History, Persuasion, Intimidation
+- **SmokeIt** (Druid 4): Nature, Perception, Insight, Survival, Animal Handling
 
-- The **type of challenge** (e.g., stealth escape, exploration, diplomacy, urban pursuit)
-- The **stakes** (what happens on success or failure)
-- The **urgency** (time-sensitive, quiet, chaotic, etc.)
-- The **party size** or if anyone is missing
-- Any **special context** (environment, faction tension, known NPCs involved)
-- Desired **challenge scope**: short (1–2 phases), medium (3–4), or extended (5+)
-
----
-
-## 📈 Then ChatGPT should:
-
-- Propose the number of phases and success/failure threshold, **with explanation**
-- Highlight 2–3 options per character that include both strong and alternative/creative uses of skills
-- Track success/failure count per phase
-- Present clear consequences for success, failure, or mixed outcomes
-- Call out any assumptions you’re making clearly (tone, urgency, enemy behavior, map structure, etc.) so I can correct or confirm them
+If the values for the abilities are not provided then assume typical 5e ability spreads; avoid overusing unproficient skills unless framed as creative approaches.
 
 ---
 
 ## 🛠️ Optional Add-On for Prep Use
 
-If prepping ahead, follow with:
-
-“Now, based on the following scene I’m preparing, begin the challenge setup:  
-[Insert summary of current location, objective, and mood]”
+"If preparing in advance, prompt me with: 'Provide scene details: location, objective, environmental factors, obstacles, and tone.' Then generate the challenge setup accordingly."
 
 ---
 

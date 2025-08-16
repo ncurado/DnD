@@ -6,13 +6,6 @@
 
 The Roleplay Adventure Node System (RANS) is a practical framework for organizing D&D 5e campaign content. It turns scattered notes into connected, modular units called "nodes." Each node represents a single encounter, event, scene, or piece of lore, written using a consistent format. This makes it easier to prepare sessions, adapt on the fly, and share content with other DMs.
 
-Each node balances two dimensions:
-
-- **Narrative Priority** – How important is this content to the overall story?
-- **Schema Depth** – How much structure and prep detail does it contain?
-
-This two-axis system helps you choose the right level of prep for each piece of your campaign.
-
 Whether you're building a homebrew world, running a published module, or collaborating with others, this guide will help you stay organized, prep efficiently, and run more engaging sessions.
 
 **Author:** Nuno Curado  
@@ -22,8 +15,6 @@ Whether you're building a homebrew world, running a published module, or collabo
 ## License
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. See [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/) for details, or contact Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-
-*Appendix B contains the full license text for offline use.*
 
 ## Table of Contents
 
@@ -44,9 +35,9 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 ## What Is the Node Structure?
 
-This section builds on the Overview by introducing the core principles behind RANS and explaining how its structure supports flexible, organized campaign prep.
+Each node balances two dimensions, the narrative priority and schema depth. This two-axis system helps you choose the right level of prep for each piece of your campaign. Both dimensions are crucial for effective campaign management.
 
-Each node balances two dimensions:
+The two dimensions:
 
 - **Narrative Priority** – How important is this content to the overall story?
 - **Schema Depth** – How much structure and prep detail does it contain?
@@ -65,8 +56,6 @@ This guide helps you use this two-axis approach to prep efficiently and run more
 - **Flexible Prep:** Pick your detail level based on your needs and available time.
 - **Easy Changes:** Modular design lets you adjust content fast.
 - **Shareable:** Standard format makes it easy to share with others.
-- **Optional Analytics:** Optionally track outcomes while maintaining privacy.
-- **Modular Automation:** Add automation features as needed, not all at once.
 
 ## The Two-Axis System
 
@@ -116,6 +105,8 @@ Here's how common DM styles align with the RANS Profiles to support your prep an
 
 ## Depth Profiles Explained
 
+These profiles represent the schema depth axis of RANS, determining how much structure each node includes.
+
 ### Lite Profile
 
 **Purpose:** Fast content creation with minimal detail  
@@ -132,8 +123,6 @@ Includes only the basics:
 
 ### Standard Profile
 
-These profiles represent the schema depth axis of RANS, determining how much structure each node includes.
-
 **Purpose:** Full-featured campaign management  
 **Time to Create:** 30–45 minutes  
 **Best For:** Main campaign content, detailed prep, collaboration
@@ -141,7 +130,7 @@ These profiles represent the schema depth axis of RANS, determining how much str
 Includes everything from Lite, plus:
 
 - Detailed metadata
-- GM intent and focus
+- DM intent and focus
 - Character integration
 - Detailed challenges and options
 - **Enhanced entity management with structured format**
@@ -195,7 +184,7 @@ Upgrading a node from Lite to Standard does not require rewriting existing conte
 
 Using the right template ensures each node is consistent and easy to reference during play.
 
-### 4.1 Example: Lite Node in Use
+### Example: Lite Node in Use
 
 ```markdown
 # L2-O1 | Goblin Ambush on the Ridge
@@ -225,7 +214,7 @@ The Standard profile in RANS includes all Lite fields, plus:
 
 Tags, estimated session time, difficulty, and pacing tools.
 
-#### GM Focus and Intent
+#### DM Focus and Intent
 
 What this node is meant to achieve and how it moves the campaign forward.
 
@@ -392,7 +381,7 @@ Simple outcomes for success or failure, linked to the story.
 - **Difficulty:** How tough is the challenge
 - **Pacing Control:** How this node affects session flow
 
-### Standard: GM Focus and Intent
+### Standard: DM Focus and Intent
 
 - **Objectives:** What this node should achieve
 - **Player Experience:** What you want players to feel or learn
