@@ -35,7 +35,7 @@ Include the following fields:
   * **System**: `#5E`, `#PF2`, `#OSR`, `#SYSTEMAGNOSTIC`
   * **Usage**: `#REFERENCE`, `#ADVENTURE`, `#SUPPLEMENT`
 
-Multiple tags from the same category are acceptable if the content justifies it.
+Multiple tags from the same category are explicitly allowed and encouraged when justified by the content.
 
 * **Summary** (3–4 sentences):
   Describe what the book covers, how it’s structured, and what kind of support it offers for a GM. Focus on scope, structure, and GM utility; avoid marketing tone.
@@ -50,13 +50,17 @@ Multiple tags from the same category are acceptable if the content justifies it.
 **Provide**:
 
 * **Major Sections/Chapters**
-  List them with 1–2 sentence summaries describing the content focus.
+  List each major section or chapter with a required 1–2 sentence description, and where available, include subsections with short descriptions for additional granularity.
 
 * **Highlights**
   Bullet out the most impactful mechanics, lore, or systems a GM would need at the table.
 
 * **Keywords**
   List 5–10 key terms that summarize the book’s content and improve retrievability.
+
+* Ensure tables are formatted with proper word wrapping for readability and consistent spacing.
+
+* Maintain consistency across all inserts by applying the same level of detail, formatting, and breakdown.
 
 ---
 
